@@ -1,10 +1,24 @@
 # cisco-vpn
 
-git clone del repo en /home/$USER
+Generar un file con las credenciales de la siguiente manera:
+
+Crear: touch /home/$USER/credentials
+Editar con el editor preferido y agregar lo siguiente:
+
+´´´
+20
+$USER
+PASSWORD-DEL-USUARIO
+2DA-PASSWORD-DEL-USUARIO
+y
+´´´
+
 
 
 Definir alias de conexion dentro de bashrc 
 
-alias vpn-telecentro='/home/$USER/vpn/vpn.sh'
-alias vpn-status='/home/$USER/vpn/vpn_status.sh'
-alias vpn-disconnect='/home/$USER/vpn/vpn_disconnect.sh'
+alias vpn-status='/opt/cisco/anyconnect/bin/vpn status'
+
+alias vpn-disconnect='/opt/cisco/anyconnect/bin/vpn disconnect'
+
+alias vpn-connect='/opt/cisco/anyconnect/bin/vpn -s  < /home/jmayoral/vpn/cred_tele connect vpn.telecentro.net.ar'
