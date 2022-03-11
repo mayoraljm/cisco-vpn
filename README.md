@@ -5,13 +5,17 @@ Generar un file con las credenciales de la siguiente manera:
 Crear: touch /home/$USER/credentials
 Editar con el editor preferido y agregar lo siguiente:
 
-´´´
+
 20
+
 $USER
+
 PASSWORD-DEL-USUARIO
+
 2DA-PASSWORD-DEL-USUARIO
+
 y
-´´´
+
 
 
 
